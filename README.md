@@ -1,7 +1,7 @@
 # Análise de Vendas e Entregas da Empresa MaxOil Solutions
-Utilizando o banco de dados fictícios (Excel) de uma empresa imaginária de vendas de aditivos e lubrificantes, iniciamos uma análise para entender o panomara de vendas, distribuição por filiais, categorias, produtos e entregas entre 2019 e 2022. O objetivo inicial é fazer uma análise exploratória dos clientes que compraram os produtos da AdventureWorks, entendendo onde estão, quanto e o que compram, se houve evolução na base de novos clientes e onde está o maior impacto desta evolução.
+Utilizando um banco de dados fictício em Excel, referente a uma empresa imaginária de vendas de aditivos e lubrificantes, iniciamos uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será analisada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos.
 
-Fazendo o download do arquivo AdventureWorksDW2022.bak e anexando-o no SQL Server, é possível executar cada consulta SQL utilizada nesta análise e obter os mesmos resultados apresentados.
+Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
 <br><br>
 
 ## Análise exploratória de dados
