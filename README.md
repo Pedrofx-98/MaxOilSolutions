@@ -5,13 +5,12 @@ Fazendo o download dos arquivos na pasta Dataset que está no repositório desse
 <br><br>
 
 ## Análise exploratória de dados
-<img align="right" width="500"  src="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/imagens/AdventureWorks%20-%20Clientes.png?raw=true">
-Iniciamos o projeto entendendo cada objeto, tabela, campo, tipos de dados e relacionamentos do modelo de dados AdventureWorks. Após identificar a tabela de clientes e vendas, desenvolvemos os scripts em SQL para explorar os dados e extrair os primeiros insights durante a análise exploratória de dados. Como por exemplo: <br><br>
-- Clientes distintos <br>
-- Clientes por país/região <br>
-- Produtos mais comprados por estes clientes <br>
-- Média de vendas para cada cliente <br>
-- E informações pertinentes, como ticket médio, mínimo e máximo.
+<img align="right" width="600"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Modelo_fonte_dados_PQ.png">
+Iniciamos o projeto importando e entendendo cada objeto, tabela, campo, tipos de dados e relacionamentos do modelo de dados obtidos no Excel. Após identificar as Primary Key (PK) e localizarmos quais campos das tabelas fato e dimensão seriam necessários para as análises, desenvolvemos a etapa de transformação dos tipos de dados (data, texto, inteiro e decimal), aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins). O objetivo nessa etapa é reduzir e otimizar os dados contidos no banco, sendo possível trabalhar de uma forma mais organizada e estratégica para  extrair os primeiros insights durante a análise exploratória de dados. Como por exemplo: <br><br>
+- Vendas por Região <br>
+- Vendas por Filiais <br>
+- Categorias com mais vendas <br>
+- Vendas por Business Line.
 <br><br>
 <a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
 
