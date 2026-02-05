@@ -1,38 +1,28 @@
 # Análise de Vendas e Entregas da Empresa MaxOil Solutions
-Utilizando um banco de dados fictício em Excel, referente a uma empresa imaginária de vendas de `aditivos` e `lubrificantes`, iniciamos uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será analisada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos.
-
-Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
+Utilizando um banco de dados fictício em Excel, referente a uma empresa imaginária de vendas de `aditivos` e `lubrificantes`, iniciamos uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será avaliada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos. Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
 <br><br>
 
 ## Análise exploratória de dados
 <img align="right" width="600"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Modelo_fonte_dados_PQ.png">
 Iniciamos o projeto importando e compreendendo cada objeto, tabela, campo, tipo de dado e relacionamento do modelo de dados obtido no Excel.
-
-Após a identificação das chaves primárias (PK) e a definição dos campos das tabelas fato e dimensão necessários para as análises, desenvolvemos a etapa de transformação, contemplando a padronização dos tipos de dados (`Data`,`Texto`,`Inteiro`e`Decimal`), a aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins).
-
-O objetivo dessa etapa foi reduzir e otimizar os dados contidos na base, preparando-os para uma abordagem mais organizada e estratégica. As análises e os primeiros insights passaram a ser identificados a partir da construção dos dashboards, quando foi possível visualizar os dados de forma consolidada durante a análise exploratória de dados, como por exemplo:
+Após a identificação das chaves primárias (PK) e a definição dos campos das tabelas fato e dimensão necessários para as análises, desenvolvemos a etapa de transformação, contemplando a padronização dos tipos de dados (`Data`,`Texto`,`Inteiro`e`Decimal`), a aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins). O objetivo dessa etapa foi reduzir e otimizar os dados contidos na base, preparando-os para uma abordagem mais organizada e estratégica. As análises e os primeiros insights passaram a ser identificados a partir da construção dos dashboards, quando foi possível visualizar os dados de forma consolidada durante a análise exploratória de dados, como por exemplo:
  <br><br>
 - Vendas por Região <br>
 - Vendas por Filiais <br>
 - Categorias com mais vendas <br>
 - Vendas por Business Line.
 <br><br>
-<a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
-
-
+<a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Dashboard_MaxOil_Vendas.png" target="_blank">Clique aqui</a> e acesse o Dashboard no Github.
 <br><br>
 
-## Análise de Novos Clientes
-<img align="left" width="500"  src="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/imagens/AdventureWorks%20-%20Novos%20Clientes.png?raw=true">
-Para identificar os novos clientes, primeiro foi necessário agrupar os clientes por ano e mês em uma CTE - Common Table Expression, porém é possível o mesmo resultado utilizando outras técnicas. Na CTE criada com o nome ClientesPrimeiraDataCompra, identificamos qual foi a primeira compra de cada, agrupando novos clientes por ano e mês.
-Com os dados agrupados, utilizamos a função de janela LAG para encontrar novos clientes no mesmo mês do ano anterior, permitindo os seguintes cálculos: <br><br>
-- Novos Clientes  <br>
-- Novos Clientes Ano Anterior<br>
-- Variação de novos clientes entre períodos <br>
+## Modelo e Fonte dos dados
+<img align="left" width="450"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Modelo_fonte_dados.png">
+Após conversa com a equipe de Tecnologia da Informação da empresa, fomos informados sobre a existência de um data warehouse contendo informações adicionais que poderiam fornecer insights valiosos sobre as entregas dos produtos. Diante disso, surgiu a necessidade de importar dados de outras fontes, como planilhas Excel, que continham informações sobre a ordem de compra, a expectativa de entrega e a data de finalização.
+
+Após a importação, essa tabela foi mesclada à tabela fato, aplicando-se uma regra para classificar o status da entrega como **“On time”** ou **“Late”**, de acordo com a comparação entre o prazo previsto e o tempo real de entrega, resultando na criação de uma nova coluna.
+
+Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação de medidas de inteligência temporal, foi criada e adicionada uma nova tabela denominada `Dim_Calendario`, contendo informações detalhadas de vendas e entregas organizadas por ano, trimestre, mês e semana.
 <br>
-<a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Dashboard_MaxOil_Vendas.png">Clique aqui</a> e acesse o Dashboard de vendas no Github.
-<br><br>
-Analisando a variação de novos clientes entre períodos, é possível identificar em 2013, um crescimento mensal muito acima da variação de 2012, sendo necessário aprofundar a análise e identificar de onde está vindo este grande crescimento de novos clientes.
 
 <br><br>
 ## Variação de novos clientes entre períodos
