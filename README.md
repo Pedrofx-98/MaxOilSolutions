@@ -6,7 +6,12 @@ Fazendo o download dos arquivos na pasta Dataset que está no repositório desse
 
 ## Análise exploratória de dados
 <img align="right" width="600"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Modelo_fonte_dados_PQ.png">
-Iniciamos o projeto importando e entendendo cada objeto, tabela, campo, tipos de dados e relacionamentos do modelo de dados obtidos no Excel. Após identificar as Primary Key (PK) e localizarmos quais campos das tabelas fato e dimensão seriam necessários para as análises, desenvolvemos a etapa de transformação dos tipos de dados (data, texto, inteiro e decimal), aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins). O objetivo nessa etapa é reduzir e otimizar os dados contidos no banco, sendo possível trabalhar de uma forma mais organizada e estratégica para  extrair os primeiros insights durante a análise exploratória de dados. Como por exemplo: <br><br>
+Iniciamos o projeto importando e compreendendo cada objeto, tabela, campo, tipo de dado e relacionamento do modelo de dados obtido no Excel.
+
+Após a identificação das chaves primárias (PK) e a definição dos campos das tabelas fato e dimensão necessários para as análises, desenvolvemos a etapa de transformação, contemplando a padronização dos tipos de dados (`Data`,`Texto`,`Inteiro`e`Decimal`), a aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins).
+
+O objetivo dessa etapa foi reduzir e otimizar os dados contidos na base, preparando-os para uma abordagem mais organizada e estratégica. As análises e os primeiros insights passaram a ser identificados a partir da construção dos dashboards, quando foi possível visualizar os dados de forma consolidada durante a análise exploratória de dados, como por exemplo:
+ <br><br>
 - Vendas por Região <br>
 - Vendas por Filiais <br>
 - Categorias com mais vendas <br>
@@ -25,7 +30,7 @@ Com os dados agrupados, utilizamos a função de janela LAG para encontrar novos
 - Novos Clientes Ano Anterior<br>
 - Variação de novos clientes entre períodos <br>
 <br>
-<a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
+<a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Dashboard_MaxOil_Vendas.png">Clique aqui</a> e acesse o Dashboard de vendas no Github.
 <br><br>
 Analisando a variação de novos clientes entre períodos, é possível identificar em 2013, um crescimento mensal muito acima da variação de 2012, sendo necessário aprofundar a análise e identificar de onde está vindo este grande crescimento de novos clientes.
 
