@@ -25,15 +25,19 @@ Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação 
 <br>
 <br>
 ## Medidas
-<img align="right" width="500" height="320" src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Vendas.png">
-Identificada a necessidade do cliente, como regras de negócio e a aplicação das mesmas no modelo de dados, iniciamos o desenvolvimento. Principais medidas tomadas; - Total de vendas, Vendas do último ano, Delta entre anos e meses, percentual de crescimento, acumulado, total de Entregas dentro do prazo ou atrasadas e seus respectivos percentuais, média de dias de entrega. Para organizar as medidas, criamos duas tabelas: Uma primeira contendo as medidas de inteligencia temporal e outra com as medidadas calcualdas das entregas.sempre seguindo a padronização dos nomes. <br>
+<img align="right" width="500" height="320"
+     src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Vendas.png">
+Identificada a necessidade do cliente, como regras de negócio e a aplicação das mesmas no modelo de dados, iniciamos o desenvolvimento. Principais medidas tomadas; - Total de vendas, Vendas do último ano, Delta entre anos e meses, percentual de crescimento, acumulado, total de Entregas dentro do prazo ou atrasadas e seus respectivos percentuais, média de dias de entrega. Para organizar as medidas, criamos duas tabelas: Uma primeira contendo as medidas de inteligencia temporal e outra com as medidadas calcualdas das entregas.sempre seguindo a padronização dos nomes.
+<br clear="right"><br>
+<img align="right" width="500" height="320"
+     src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Vendas.png">
+<br clear="right"><br>
+</a> e acesse o script SQL no Github.
 
-<br>
-<a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes%20Delta%202013.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
-
-<br><br>
+<br><br clear="right">
 
 ## Conclusão técnica SQL
+
 Com o SQL, podemos analisar, extrair, manipular e exibir os dados de uma base de dados de uma forma simples e rápida, apenas conectando direto na fonte dos dados. Porém, não é uma ferramenta dinâmica em com abordagem visual, pois cada vez que pricisa ver os dados de uma forma diferente, precisa reescrever o comando SQL para extrair os dados da forma que gostaria, porem os dados sempre serão exibidos em formato de tabela, deixando sua análise menos dinamica do que um dashboard, por exemplo.
 
 A minha conclusão é que o SQL é sempre uma linguagem muito importante e deve ser utilizada para analisar um banco de dados antes de escolher outra ferramenta para análise dos dados, como o Power BI por exemplo. Ou seja, valide as informações no SQL e só depois considere outras ferramentas de acordo com a necessidade da empresa ou projeto que estiver atuando.
