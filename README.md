@@ -1,5 +1,5 @@
 # Análise de Vendas e Entregas da Empresa MaxOil Solutions
-Utilizando um banco de dados fictício em Excel, referente a uma empresa imaginária de vendas de `aditivos` e `lubrificantes`, iniciamos uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será avaliada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos. Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
+Utilizando um banco de dados fictício em Excel, referente a uma empresa fictícia de vendas de `aditivos` e `lubrificantes`, iniciamos uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será avaliada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos. Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
 <br><br>
 
 ## Análise exploratória de dados
@@ -23,17 +23,10 @@ Após a importação, essa tabela foi mesclada à tabela fato, aplicando-se uma 
 
 Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação de medidas de inteligência temporal, foi criada e adicionada uma nova tabela denominada `Dim_Calendario`, contendo informações detalhadas de vendas e entregas organizadas por ano, trimestre, mês e semana.
 <br>
-
-<br><br>
-## Variação de novos clientes entre períodos
+<br>
+## Medidas
 <img align="right" width="500" height="320" src="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/imagens/AdventureWorks%20-%20Novos%20Clientes%20Delta.png?raw=true">
-Analisando a variação de novos clientes, quando comparados com o mesmo período/mês do ano anterior, decidimos agrupar esta variação por região/país para identificar se houve crescimento. 
-Filtramos apenas o ano de 2013, pois foi o período com maiores taxas de crescimentos de novos clientes, o que nos permitiu concluir que: <br><br>
-- Canadá teve o maior crescimento percentual entre todos os países - aproximadamente 623% <br>
-- Estados Unidos teve o maior crescimento cumulativo de clientes - aproximadamente 5050 <br>
-- Apenas os Estados Unidos tiveram um crescimento maior que todos países da Europa juntos, sendo a América do Norte o principal mercado de atuação da empresa.
-- Todos países europeus dobraram ou superaram sua base de novos clientes. <br>
-- Austrália, apesar de não ter um crescimento comparável com Europa e América do Norte, aumentou sua base de novos clientes em quase 50%, sendo um ótimo resultado em 2013. <br>
+Identificada a necessidade do cliente, como regras de negócio e a aplicação das mesmas no modelo de dados, iniciamos o desenvolvimento. Principais medidas tomadas; - Custos, Receitas, Lucro, Entregas - Medidas de inteligência temporal para comparação de desempenho e resultados entre períodos distintos ou cumulativos. Para organizar as medidas, criamos uma tabela contendo todas as medidas, sempre seguindo a padronização dos nomes. <br>
 
 <br>
 <a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes%20Delta%202013.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
