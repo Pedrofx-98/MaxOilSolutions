@@ -25,15 +25,23 @@ Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação 
 <br>
 <br>
 ## Medidas
-<img align="right" width="500" height="320" src="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/imagens/AdventureWorks%20-%20Novos%20Clientes%20Delta.png?raw=true">
-Identificada a necessidade do cliente, como regras de negócio e a aplicação das mesmas no modelo de dados, iniciamos o desenvolvimento. Principais medidas tomadas; - Custos, Receitas, Lucro, Entregas - Medidas de inteligência temporal para comparação de desempenho e resultados entre períodos distintos ou cumulativos. Para organizar as medidas, criamos uma tabela contendo todas as medidas, sempre seguindo a padronização dos nomes. <br>
 
-<br>
-<a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes%20Delta%202013.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
+<img align="right" width="500" height="320"
+     src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Vendas.png">
 
+A partir da identificação das necessidades do negócio, considerando as regras de negócio definidas pelo cliente e sua correta aplicação no modelo de dados, iniciamos o desenvolvimento das medidas analíticas.
+
+Foram criadas medidas voltadas à análise de desempenho de vendas, incluindo: total de vendas, vendas do último ano, variações (delta) entre anos e meses, percentual de crescimento, valores acumulados, além do total de entregas dentro e fora do prazo, seus respectivos percentuais e a média de dias de entrega.
+
+Para garantir organização, padronização e escalabilidade do modelo, as medidas foram estruturadas em duas tabelas distintas: uma dedicada às medidas de inteligência temporal e outra concentrando as medidas calculadas relacionadas às entregas, sempre seguindo um padrão consistente de nomenclatura.
+
+Durante o desenvolvimento das medidas, foram utilizadas funções DAX amplamente aplicadas em cenários analíticos, tais como: `SUM`, `CALCULATE`, `DATEADD`, `VAR`, `DIVIDE`, `SAMEPERIODLASTYEAR`, `TOTALMTD`, `TOTALYTD`, `COUNT`, `USERELATIONSHIP`, `FILTER`, `VALUES`, `AVERAGEX`, `MAX`, `LASTDATE`, `REMOVEFILTERS`, `IF` e `SELECTEDVALUE`.
+
+As medidas relacionadas às entregas possibilitaram uma avaliação mais precisa do desempenho logístico, permitindo identificar gargalos operacionais, níveis de atraso e oportunidades de melhoria no cumprimento dos prazos acordados.
 <br><br>
-
+<a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Entregas.png" target="_blank">Clique aqui</a> e acesse a figura de medidas das entregas no Github.
 ## Conclusão técnica SQL
+
 Com o SQL, podemos analisar, extrair, manipular e exibir os dados de uma base de dados de uma forma simples e rápida, apenas conectando direto na fonte dos dados. Porém, não é uma ferramenta dinâmica em com abordagem visual, pois cada vez que pricisa ver os dados de uma forma diferente, precisa reescrever o comando SQL para extrair os dados da forma que gostaria, porem os dados sempre serão exibidos em formato de tabela, deixando sua análise menos dinamica do que um dashboard, por exemplo.
 
 A minha conclusão é que o SQL é sempre uma linguagem muito importante e deve ser utilizada para analisar um banco de dados antes de escolher outra ferramenta para análise dos dados, como o Power BI por exemplo. Ou seja, valide as informações no SQL e só depois considere outras ferramentas de acordo com a necessidade da empresa ou projeto que estiver atuando.
