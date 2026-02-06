@@ -12,7 +12,7 @@ Após a identificação das chaves primárias (PK) e a definição dos campos da
 - Categorias com mais vendas <br>
 - Vendas por Business Line.
 <br><br>
-<a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Dashboard_MaxOil_Vendas.png" target="_blank">Clique aqui</a> e acesse o Dashboard no Github.
+<a href="https://app.powerbi.com/view?r=eyJrIjoiM2I2YTlmNGItZTgzZS00MDEyLWFlOWYtZDk2ZmY5OTQyNDkzIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">Clique aqui</a> e acesse o Dashboard.
 <br><br>
 
 ## Modelo e Fonte dos dados
