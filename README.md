@@ -25,8 +25,8 @@ Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação 
 <br>
 <br>
 ## Medidas
-<img align="right" width="500" height="320" src="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/imagens/AdventureWorks%20-%20Novos%20Clientes%20Delta.png?raw=true">
-Identificada a necessidade do cliente, como regras de negócio e a aplicação das mesmas no modelo de dados, iniciamos o desenvolvimento. Principais medidas tomadas; - Custos, Receitas, Lucro, Entregas - Medidas de inteligência temporal para comparação de desempenho e resultados entre períodos distintos ou cumulativos. Para organizar as medidas, criamos uma tabela contendo todas as medidas, sempre seguindo a padronização dos nomes. <br>
+<img align="right" width="500" height="320" src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Vendas.png">
+Identificada a necessidade do cliente, como regras de negócio e a aplicação das mesmas no modelo de dados, iniciamos o desenvolvimento. Principais medidas tomadas; - Total de vendas, Vendas do último ano, Delta entre anos e meses, percentual de crescimento, acumulado, total de Entregas dentro do prazo ou atrasadas e seus respectivos percentuais, média de dias de entrega. Para organizar as medidas, criamos duas tabelas: Uma primeira contendo as medidas de inteligencia temporal e outra com as medidadas calcualdas das entregas.sempre seguindo a padronização dos nomes. <br>
 
 <br>
 <a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes%20Delta%202013.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
