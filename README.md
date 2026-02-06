@@ -40,7 +40,7 @@ Durante o desenvolvimento das medidas, foram utilizadas funções DAX amplamente
 As medidas relacionadas às entregas possibilitaram uma avaliação mais precisa do desempenho logístico, permitindo identificar gargalos operacionais, níveis de atraso e oportunidades de melhoria no cumprimento dos prazos acordados.
 <br><br>
 <a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Entregas.png" target="_blank">Clique aqui</a> e acesse a figura de medidas das entregas no Github.
-## Conclusão técnica SQL
+## Conclusão técnica
 
 Com o SQL, podemos analisar, extrair, manipular e exibir os dados de uma base de dados de uma forma simples e rápida, apenas conectando direto na fonte dos dados. Porém, não é uma ferramenta dinâmica em com abordagem visual, pois cada vez que pricisa ver os dados de uma forma diferente, precisa reescrever o comando SQL para extrair os dados da forma que gostaria, porem os dados sempre serão exibidos em formato de tabela, deixando sua análise menos dinamica do que um dashboard, por exemplo.
 
@@ -58,13 +58,12 @@ Com esta análise, chegamos as seguintes conclusões:<br>
  - Além da quantidade de clientes novos, a receita trazida por clientes novos também é a maior fatia do total.<br>
  - Os clientes novos não são a maioria para todos países e períodos. Por isso o Power BI é uma ferramenta de extrema importância, pois permite o usuário final fazer seus filtros e ter análises de forma dinâmica.
 <br><br>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiNWJjODBmOTAtYmNhMy00YjdmLTk5ZDMtMDc4NGI4NDY3YzJmIiwidCI6IjQxNGU0N2Q2LTVhNGUtNDkzZS05OWJkLTUzMTYwZjJhYWY2ZiJ9" target="_blank">Clique aqui</a> e acesse o a solução desenvolvida para a empresa AdventureWorks.
-<br>
-<a href="https://github.com/BruceFonseca/AdventureWorks2022/tree/main/POWERBI" target="_blank">Clique aqui</a> e acesse o arquivo .pbix no Github.
-<br><br>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiM2I2YTlmNGItZTgzZS00MDEyLWFlOWYtZDk2ZmY5OTQyNDkzIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">Clique aqui</a> e acesse o a solução desenvolvida para a empresa MaxOil Solutions.
 
 ## Ferramentas e linguagens utilizadas
-<div style="display: inline_block">
-    <img align="center" alt="SQL" height="40" width="40" src="https://github.com/BruceFonseca/ferramentas/blob/main/logo.png?raw=true">
-    <img align="center" alt="Power BI" height="40" width="40" src="https://github.com/BruceFonseca/ferramentas/blob/main/1200px-New_Power_BI_Logo.svg.png?raw=true">
-</div>
+<ul>
+  <li>🟢 <strong>Excel</strong> — Fonte de dados</li>
+  <li>🟡 <strong>Power BI</strong> — Transformação, modelagem e visualização</li>
+  <li>🔵 <strong>DAX</strong> — Criação de métricas, KPIs e inteligência temporal</li>
+</ul>
+
