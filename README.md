@@ -42,10 +42,14 @@ As medidas relacionadas às entregas possibilitaram uma avaliação mais precisa
 <a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Entregas.png" target="_blank">Clique aqui</a> e acesse a figura de medidas das entregas no Github.
 ## Conclusão técnica
 
-Com o SQL, podemos analisar, extrair, manipular e exibir os dados de uma base de dados de uma forma simples e rápida, apenas conectando direto na fonte dos dados. Porém, não é uma ferramenta dinâmica em com abordagem visual, pois cada vez que pricisa ver os dados de uma forma diferente, precisa reescrever o comando SQL para extrair os dados da forma que gostaria, porem os dados sempre serão exibidos em formato de tabela, deixando sua análise menos dinamica do que um dashboard, por exemplo.
+Neste projeto, os dados foram extraídos a partir de planilhas em Excel, uma ferramenta amplamente utilizada pelas empresas até hoje devido à sua flexibilidade, facilidade de uso e rápida adoção por diferentes áreas do negócio. O Excel permite a construção e manutenção de bases de dados de forma ágil, sendo muitas vezes o primeiro ponto de organização e armazenamento das informações operacionais.
 
-A minha conclusão é que o SQL é sempre uma linguagem muito importante e deve ser utilizada para analisar um banco de dados antes de escolher outra ferramenta para análise dos dados, como o Power BI por exemplo. Ou seja, valide as informações no SQL e só depois considere outras ferramentas de acordo com a necessidade da empresa ou projeto que estiver atuando.
-Não existe uma ferramenta melhor que a outra, existe ferramentas adequadas as necessidades apresentadas em cada projeto de dados.
+No entanto, à medida que o volume de dados cresce e as análises se tornam mais complexas, torna-se necessário estruturar, tratar e modelar essas informações de forma mais robusta. Nesse contexto, o Power BI desempenha um papel fundamental ao possibilitar a transformação dos dados, a criação de modelos analíticos e a construção de dashboards interativos, permitindo uma análise mais dinâmica e orientada à tomada de decisão.
+
+Apesar das vantagens do Excel e do Power BI no aspecto visual e analítico, é importante destacar que a adaptação desses dados para um banco de dados relacional, como o SQL, traz benefícios significativos. O uso de um banco de dados permite maior controle sobre a integridade dos dados, melhor desempenho em grandes volumes de informação, padronização de regras de negócio e escalabilidade para projetos futuros.
+
+Dessa forma, não existe uma ferramenta superior à outra, mas sim ferramentas adequadas a diferentes necessidades. O Excel continua sendo extremamente relevante no dia a dia das empresas, o Power BI agrega valor ao transformar dados em insights visuais, e o SQL se mostra essencial para estruturar, validar e garantir a consistência dos dados. O uso combinado dessas tecnologias permite construir soluções analíticas mais sólidas, eficientes e alinhadas às necessidades do negócio.
+
 
 <br><br>
 
