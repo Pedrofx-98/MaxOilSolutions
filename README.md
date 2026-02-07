@@ -59,26 +59,27 @@ Com o objetivo de realizar uma análise mais dinâmica, interativa e visual, foi
 
 A partir de uma análise exploratória orientada pelas necessidades do cliente, foram identificados os seguintes principais insights:
 
-A principal Business Line da empresa está concentrada na venda de lubrificantes, que representam aproximadamente 88% do total de vendas ao longo do período analisado.
+-A principal Business Line da empresa está concentrada na venda de lubrificantes, que representam aproximadamente 88% do total de vendas ao longo do período analisado.
 
-Em termos regionais, as regiões Centro-Oeste e Sudeste concentram 66,5% das vendas, com destaque para a filial de Sorocaba, responsável por 64% do faturamento total da empresa.
+-Em termos regionais, as regiões Centro-Oeste e Sudeste concentram 66,5% das vendas, com destaque para a filial de Sorocaba, responsável por 64% do faturamento total da empresa.
 
-No recorte por categorias, a Categoria 6 (Aditivos) apresentou o maior volume de vendas, representando 27,1% do total.
+-No recorte por categorias, a Categoria 6 (Aditivos) apresentou o maior volume de vendas, representando 27,1% do total.
 
-Avaliando o desempenho da empresa entre 2019 e 2022, foi identificado um crescimento médio anual (CAGR) de 3,62%, métrica escolhida por capturar oscilações relevantes ao longo do tempo. Destaca-se que 2020 apresentou a menor performance, fortemente impactada pelos efeitos da pandemia de COVID-19.
+-Avaliando o desempenho da empresa entre 2019 e 2022, foi identificado um crescimento médio anual (CAGR) de 3,62%, métrica escolhida por capturar oscilações relevantes ao longo do tempo. Destaca-se que 2020 apresentou a menor performance, fortemente impactada pelos efeitos da pandemia de COVID-19.
 
-Apesar de Sorocaba liderar em volume total de vendas, a filial de Blumenau apresentou o maior crescimento percentual, com 5,1%, superando a média da empresa. Em contrapartida, a filial de Itapuã registrou crescimento negativo de −2,78% no período.
+-Apesar de Sorocaba liderar em volume total de vendas, a filial de Blumenau apresentou o maior crescimento percentual, com 5,1%, superando a média da empresa. Em contrapartida, a filial de Itapuã registrou crescimento negativo de −2,78% no período.
 
-Na análise de crescimento mensal, o mês de março apresentou o melhor desempenho médio (+7,66%), enquanto abril registrou retração média de −2,91%, indicando possível sazonalidade ou impacto operacional específico.
+-Na análise de crescimento mensal, o mês de março apresentou o melhor desempenho médio (+7,66%), enquanto abril registrou retração média de −2,91%, indicando possível sazonalidade ou impacto operacional específico.
 
-Entre as categorias, a Categoria 7 destacou-se com o maior crescimento (19,48%), enquanto a Categoria 11 apresentou o pior desempenho (−3,17%).
+-Entre as categorias, a Categoria 7 destacou-se com o maior crescimento (19,48%), enquanto a Categoria 11 apresentou o pior desempenho (−3,17%).
 
-Considerando as divisões geográficas, a Divisão Sul apresentou o maior crescimento médio anual (5,16%), impulsionada principalmente pelo desempenho da filial de Blumenau. Já a divisão Norte/Nordeste registrou crescimento negativo (−1,59%).
+-Considerando as divisões geográficas, a Divisão Sul apresentou o maior crescimento médio anual (5,16%), impulsionada principalmente pelo desempenho da filial de Blumenau. Já a divisão Norte/Nordeste registrou crescimento negativo (−1,59%).
 
-No cenário de entregas, foi identificado um ponto crítico: aproximadamente 60% das entregas encontram-se em atraso. A filial de Sorocaba lidera o ranking de atrasos, seguida por Blumenau. Ao aprofundar a análise por categoria, observou-se que a Categoria 6 concentra o maior volume de atrasos em ambas as filiais, com destaque para o material Bl01-CA06-1051, que soma mais de 56 mil entregas atrasadas, além de apresentar as maiores médias de dias de atraso.
+-No cenário de entregas, foi identificado um ponto crítico: aproximadamente 60% das entregas encontram-se em atraso. A filial de Sorocaba lidera o ranking de atrasos, seguida por Blumenau. Ao aprofundar a análise por categoria, observou-se que a Categoria 6 concentra o maior volume de atrasos em ambas as filiais, com destaque para o material Bl01-CA06-1051, que soma mais de 56 mil entregas atrasadas, além de apresentar as maiores médias de dias de atraso.
 
-Esses resultados indicam que o alto volume de vendas e crescimento acelerado, especialmente em Blumenau, pode estar gerando gargalos operacionais e limitações de capacidade logística, sugerindo a necessidade de revisão dos processos de distribuição, planejamento de demanda e infraestrutura logística para sustentar o crescimento futuro.
- 
+-Esses resultados indicam que o alto volume de vendas e crescimento acelerado, especialmente em Blumenau, pode estar gerando gargalos operacionais e limitações de capacidade logística, sugerindo a necessidade de revisão dos processos de distribuição, planejamento de demanda e infraestrutura logística para sustentar o crescimento futuro.
+
+ Para aprofundar a análise, maiores detalhes sobre vendas e entregas podem ser explorados diretamente no dashboard por meio do uso de **tooltips**, que fornecem informações contextuais adicionais, e do recurso de **drill-through**, permitindo a navegação para análises mais detalhadas por filial, categoria, produto e período.
  
 <br><br>
 <a href="https://app.powerbi.com/view?r=eyJrIjoiM2I2YTlmNGItZTgzZS00MDEyLWFlOWYtZDk2ZmY5OTQyNDkzIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">Clique aqui</a> e acesse o a solução desenvolvida para a empresa MaxOil Solutions.
