@@ -55,12 +55,31 @@ Dessa forma, não existe uma ferramenta superior à outra, mas sim ferramentas a
 
 ## Dashboard Power BI
 <img align="right" width="500"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Dashboard_MaxOil_Vendas.png">
-Seguindo a idéia que SQL não é a melhor ferramenta para uma análise dinâmica e visual de informações, desenvolvi um dashboard focado na análise dos clientes novos e recorrentes da mesma base de dados AdventureWorks.
-Como o Power BI permite análises dinâmicas e visuais de forma simples, escrevendo menos código DAX e permitindo o usuário total interação com a ferramenta, fiz uma análise exploratória na quantidade e receira entre novos e recoreente.<br>
-Com esta análise, chegamos as seguintes conclusões:<br>
- - A maioria dos clientes a partir de 2013 é novo. <br>
- - Além da quantidade de clientes novos, a receita trazida por clientes novos também é a maior fatia do total.<br>
- - Os clientes novos não são a maioria para todos países e períodos. Por isso o Power BI é uma ferramenta de extrema importância, pois permite o usuário final fazer seus filtros e ter análises de forma dinâmica.
+Com o objetivo de realizar uma análise mais dinâmica, interativa e visual, foi desenvolvido um dashboard em Power BI integrando as análises de vendas e entregas a partir da base de dados fornecida pela empresa. A escolha da ferramenta se deu pela sua capacidade de explorar a informação com menor complexidade de código no DAX, além de permitir total interação do usuário final por meio de filtros e segmentações.
+
+A partir de uma análise exploratória orientada pelas necessidades do cliente, foram identificados os seguintes principais insights:
+
+A principal Business Line da empresa está concentrada na venda de lubrificantes, que representam aproximadamente 88% do total de vendas ao longo do período analisado.
+
+Em termos regionais, as regiões Centro-Oeste e Sudeste concentram 66,5% das vendas, com destaque para a filial de Sorocaba, responsável por 64% do faturamento total da empresa.
+
+No recorte por categorias, a Categoria 6 (Aditivos) apresentou o maior volume de vendas, representando 27,1% do total.
+
+Avaliando o desempenho da empresa entre 2019 e 2022, foi identificado um crescimento médio anual (CAGR) de 3,62%, métrica escolhida por capturar oscilações relevantes ao longo do tempo. Destaca-se que 2020 apresentou a menor performance, fortemente impactada pelos efeitos da pandemia de COVID-19.
+
+Apesar de Sorocaba liderar em volume total de vendas, a filial de Blumenau apresentou o maior crescimento percentual, com 5,1%, superando a média da empresa. Em contrapartida, a filial de Itapuã registrou crescimento negativo de −2,78% no período.
+
+Na análise de crescimento mensal, o mês de março apresentou o melhor desempenho médio (+7,66%), enquanto abril registrou retração média de −2,91%, indicando possível sazonalidade ou impacto operacional específico.
+
+Entre as categorias, a Categoria 7 destacou-se com o maior crescimento (19,48%), enquanto a Categoria 11 apresentou o pior desempenho (−3,17%).
+
+Considerando as divisões geográficas, a Divisão Sul apresentou o maior crescimento médio anual (5,16%), impulsionada principalmente pelo desempenho da filial de Blumenau. Já a divisão Norte/Nordeste registrou crescimento negativo (−1,59%).
+
+No cenário de entregas, foi identificado um ponto crítico: aproximadamente 60% das entregas encontram-se em atraso. A filial de Sorocaba lidera o ranking de atrasos, seguida por Blumenau. Ao aprofundar a análise por categoria, observou-se que a Categoria 6 concentra o maior volume de atrasos em ambas as filiais, com destaque para o material Bl01-CA06-1051, que soma mais de 56 mil entregas atrasadas, além de apresentar as maiores médias de dias de atraso.
+
+Esses resultados indicam que o alto volume de vendas e crescimento acelerado, especialmente em Blumenau, pode estar gerando gargalos operacionais e limitações de capacidade logística, sugerindo a necessidade de revisão dos processos de distribuição, planejamento de demanda e infraestrutura logística para sustentar o crescimento futuro.
+ 
+ 
 <br><br>
 <a href="https://app.powerbi.com/view?r=eyJrIjoiM2I2YTlmNGItZTgzZS00MDEyLWFlOWYtZDk2ZmY5OTQyNDkzIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">Clique aqui</a> e acesse o a solução desenvolvida para a empresa MaxOil Solutions.
 
