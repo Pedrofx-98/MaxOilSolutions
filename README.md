@@ -81,7 +81,7 @@ A partir de uma análise exploratória orientada pelas necessidades do cliente, 
 
  Para aprofundar a análise, maiores detalhes sobre vendas e entregas podem ser explorados diretamente no dashboard por meio do uso de **tooltips**, que fornecem informações contextuais adicionais, e do recurso de **drill-through**, permitindo a navegação para análises mais detalhadas por filial, categoria, produto e período.
  
-<br><br>
+<br>
 <a href="https://app.powerbi.com/view?r=eyJrIjoiM2I2YTlmNGItZTgzZS00MDEyLWFlOWYtZDk2ZmY5OTQyNDkzIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">Clique aqui</a> e acesse o a solução desenvolvida para a empresa MaxOil Solutions.
 
 ## Ferramentas e linguagens utilizadas
