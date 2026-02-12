@@ -26,7 +26,7 @@ Após conversa com a equipe de Tecnologia da Informação da empresa, fui inform
 
 Após a importação, essa tabela foi mesclada à tabela fato, aplicando-se uma regra para classificar o status da entrega como **“On time”** ou **“Late”**, de acordo com a comparação entre o prazo previsto e o tempo real de entrega, resultando na criação de uma nova coluna.
 
-Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação de medidas de inteligência temporal, foi criada e adicionada uma nova tabela denominada `Dim_Calendario`, contendo informações detalhadas de vendas e entregas organizadas por ano, trimestre, mês e semana.
+Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação de medidas de inteligência temporal, criei e adicionei uma nova tabela denominada `Dim_Calendario`, contendo informações detalhadas de vendas e entregas organizadas por ano, trimestre, mês e semana.
 <br>
 <br>
 ## Medidas
