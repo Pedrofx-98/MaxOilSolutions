@@ -1,11 +1,11 @@
 # Análise de Vendas e Entregas da Empresa MaxOil Solutions
-Utilizando um banco de dados fictício em Excel, referente a uma empresa fictícia de vendas de `aditivos` e `lubrificantes`, iniciamos uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será avaliada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos. Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
+Utilizando um banco de dados fictício em Excel, referente a uma empresa fictícia de vendas de `aditivos` e `lubrificantes`, iniciei uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será avaliada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos. Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
 <br><br>
 
 ## Análise exploratória de dados
 <img align="right" width="600"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Modelo_fonte_dados_PQ.png">
-Iniciamos o projeto importando e compreendendo cada objeto, tabela, campo, tipo de dado e relacionamento do modelo de dados obtido no Excel.
-Após a identificação das chaves primárias (PK) e a definição dos campos das tabelas fato e dimensão necessários para as análises, desenvolvemos a etapa de transformação, contemplando a padronização dos tipos de dados padronização dos tipos de dados (<code>Data</code>, <code>Texto</code>, <code>Inteiro</code> e <code>Decimal</code>), a aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins). O objetivo dessa etapa foi reduzir e otimizar os dados contidos na base, preparando-os para uma abordagem mais organizada e estratégica. As análises e os primeiros insights passaram a ser identificados a partir da construção dos dashboards, quando foi possível visualizar os dados de forma consolidada durante a análise exploratória de dados, como por exemplo:
+Iniciei o projeto importando e compreendendo cada objeto, tabela, campo, tipo de dado e relacionamento do modelo de dados obtido no Excel.
+Após a identificação das chaves primárias (PK) e a definição dos campos das tabelas fato e dimensão necessários para as análises, desenvolvi a etapa de transformação, contemplando a padronização dos tipos de dados padronização dos tipos de dados (<code>Data</code>, <code>Texto</code>, <code>Inteiro</code> e <code>Decimal</code>), a aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins). O objetivo dessa etapa foi reduzir e otimizar os dados contidos na base, preparando-os para uma abordagem mais organizada e estratégica. As análises e os primeiros insights passaram a ser identificados a partir da construção dos dashboards, quando foi possível visualizar os dados de forma consolidada durante a análise exploratória de dados, como por exemplo:
  <br><br>
 - Vendas por Região <br>
 - Vendas por Filiais <br>
@@ -17,7 +17,7 @@ Após a identificação das chaves primárias (PK) e a definição dos campos da
 
 ## Modelo e Fonte dos dados
 <img align="left" width="450"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Modelo_fonte_dados.png">
-Após conversa com a equipe de Tecnologia da Informação da empresa, fomos informados sobre a existência de um data warehouse contendo informações adicionais que poderiam fornecer insights valiosos sobre as entregas dos produtos. Diante disso, surgiu a necessidade de importar dados de outras fontes, como planilhas Excel, que continham informações sobre a ordem de compra, a expectativa de entrega e a data de finalização.
+Após conversa com a equipe de Tecnologia da Informação da empresa, fui informado sobre a existência de um data warehouse contendo informações adicionais que poderiam fornecer insights valiosos sobre as entregas dos produtos. Diante disso, surgiu a necessidade de importar dados de outras fontes, como planilhas Excel, que continham informações sobre a ordem de compra, a expectativa de entrega e a data de finalização.
 
 Após a importação, essa tabela foi mesclada à tabela fato, aplicando-se uma regra para classificar o status da entrega como **“On time”** ou **“Late”**, de acordo com a comparação entre o prazo previsto e o tempo real de entrega, resultando na criação de uma nova coluna.
 
@@ -29,7 +29,7 @@ Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação 
 <img align="right" width="500" height="320"
      src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Vendas.png">
 
-A partir da identificação das necessidades do negócio, considerando as regras de negócio definidas pelo cliente e sua correta aplicação no modelo de dados, iniciamos o desenvolvimento das medidas analíticas.
+A partir da identificação das necessidades do negócio, considerando as regras de negócio definidas pelo cliente e sua correta aplicação no modelo de dados, iniciei o desenvolvimento das medidas analíticas.
 
 Foram criadas medidas voltadas à análise de desempenho de vendas, incluindo: total de vendas, vendas do último ano, variações (delta) entre anos e meses, percentual de crescimento, valores acumulados, além do total de entregas dentro e fora do prazo, seus respectivos percentuais e a média de dias de entrega.
 
@@ -55,7 +55,7 @@ Dessa forma, não existe uma ferramenta superior à outra, mas sim ferramentas a
 
 ## Dashboard Power BI
 <img align="right" width="500"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Dashboard_MaxOil_Vendas.png">
-Com o objetivo de realizar uma análise mais dinâmica, interativa e visual, foi desenvolvido um dashboard em Power BI integrando as análises de vendas e entregas a partir da base de dados fornecida pela empresa. A escolha da ferramenta se deu pela sua capacidade de explorar a informação com menor complexidade de código no DAX, além de permitir total interação do usuário final por meio de filtros e segmentações.
+Com o objetivo de realizar uma análise mais dinâmica, interativa e visual, desenvolvi um dashboard em Power BI integrando as análises de vendas e entregas a partir da base de dados fornecida pela empresa. A escolha da ferramenta se deu pela sua capacidade de explorar a informação com menor complexidade de código no DAX, além de permitir total interação do usuário final por meio de filtros e segmentações.
 
 A partir de uma análise exploratória orientada pelas necessidades do cliente, foram identificados os seguintes principais insights:
 
