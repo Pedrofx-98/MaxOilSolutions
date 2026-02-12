@@ -1,11 +1,16 @@
 # Análise de Vendas e Entregas da Empresa MaxOil Solutions
-Utilizando um banco de dados fictício em Excel, referente a uma empresa fictícia de vendas de `aditivos` e `lubrificantes`, iniciei uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial é realizar uma análise exploratória, buscando identificar onde está a maior concentração de vendas, quais produtos atuam como drivers, se houve crescimento ao longo dos anos e onde se encontra o maior impacto dessa evolução. Além disso, será avaliada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos. Fazendo o download dos arquivos na pasta Dataset que está no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nesta análise e obter os mesmos resultados apresentados.
+Utilizando um banco de dados fictício em Excel, referente a uma empresa fictícia de vendas de `aditivos` e `lubrificantes`, iniciei uma análise com o objetivo de compreender o panorama de vendas, a distribuição por filiais, categorias, produtos e entregas no período de 2019 a 2022. O objetivo inicial era realizar uma análise exploratória, buscando identificar onde estava a maior concentração de vendas, quais produtos atuavam como drivers, se houve crescimento ao longo dos anos e onde se encontrava o maior impacto dessa evolução. Além disso, foi avaliada a performance das entregas, com o objetivo de identificar pontos de melhoria e direcionar ações para corrigir possíveis atrasos. Fazendo o download dos arquivos na pasta Dataset que esta no repositório desse projeto, é possível extrair, transformar e carregar os dados utilizados nessa análise e obter os mesmos resultados apresentados.
 <br><br>
 
 ## Análise exploratória de dados
 <img align="right" width="600"  src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Modelo_fonte_dados_PQ.png">
-Iniciei o projeto importando e compreendendo cada objeto, tabela, campo, tipo de dado e relacionamento do modelo de dados obtido no Excel.
-Após a identificação das chaves primárias (PK) e a definição dos campos das tabelas fato e dimensão necessários para as análises, desenvolvi a etapa de transformação, contemplando a padronização dos tipos de dados padronização dos tipos de dados (<code>Data</code>, <code>Texto</code>, <code>Inteiro</code> e <code>Decimal</code>), a aplicação de filtros nas colunas e a mesclagem entre as tabelas (joins). O objetivo dessa etapa foi reduzir e otimizar os dados contidos na base, preparando-os para uma abordagem mais organizada e estratégica. As análises e os primeiros insights passaram a ser identificados a partir da construção dos dashboards, quando foi possível visualizar os dados de forma consolidada durante a análise exploratória de dados, como por exemplo:
+Iniciei o projeto importando e analisando cada objeto, tabela, campo, tipo de dado e relacionamento presentes no modelo obtido em Excel, com o objetivo de compreender integralmente a estrutura da base.
+
+Após identificar as chaves primárias (PK) e definir os campos das tabelas fato e dimensão necessários para as análises, desenvolvi a etapa de transformação dos dados. Nessa fase, padronizei os tipos de dados (<code>Data</code>, <code>Texto</code>, <code>Inteiro</code> e <code>Decimal</code>), apliquei filtros nas colunas relevantes e realizei a mesclagem entre as tabelas (joins).
+
+Conduzi essa etapa com o objetivo de reduzir redundâncias, otimizar o volume de dados e estruturar a base de forma mais organizada e estratégica, garantindo maior eficiência no modelo analítico.
+
+A partir da construção dos dashboards, iniciei a análise exploratória dos dados, momento em que passei a identificar os primeiros insights ao visualizar as informações de forma consolidada, como por exemplo:
  <br><br>
 - Vendas por Região <br>
 - Vendas por Filiais <br>
@@ -29,15 +34,15 @@ Com o objetivo de aprimorar a visualização dos dados e viabilizar a criação 
 <img align="right" width="500" height="320"
      src="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Vendas.png">
 
-A partir da identificação das necessidades do negócio, considerando as regras de negócio definidas pelo cliente e sua correta aplicação no modelo de dados, iniciei o desenvolvimento das medidas analíticas.
+A partir da identificação das necessidades do negócio, considerando as regras definidas pelo cliente e sua correta aplicação no modelo de dados, iniciei o desenvolvimento das medidas analíticas.
 
-Foram criadas medidas voltadas à análise de desempenho de vendas, incluindo: total de vendas, vendas do último ano, variações (delta) entre anos e meses, percentual de crescimento, valores acumulados, além do total de entregas dentro e fora do prazo, seus respectivos percentuais e a média de dias de entrega.
+Criei medidas voltadas à análise de desempenho de vendas, incluindo total de vendas, vendas do último ano, variações (delta) entre anos e meses, percentual de crescimento, valores acumulados, além do total de entregas dentro e fora do prazo, seus respectivos percentuais e a média de dias de entrega.
 
-Para garantir organização, padronização e escalabilidade do modelo, as medidas foram estruturadas em duas tabelas distintas: uma dedicada às medidas de inteligência temporal e outra concentrando as medidas calculadas relacionadas às entregas, sempre seguindo um padrão consistente de nomenclatura.
+Para garantir organização, padronização e escalabilidade do modelo, estruturei as medidas em duas tabelas distintas: uma dedicada às métricas de inteligência temporal e outra concentrando as medidas calculadas relacionadas às entregas, sempre seguindo um padrão consistente de nomenclatura.
 
-Durante o desenvolvimento das medidas, foram utilizadas funções DAX amplamente aplicadas em cenários analíticos, tais como: `SUM`, `CALCULATE`, `DATEADD`, `VAR`, `DIVIDE`, `SAMEPERIODLASTYEAR`, `TOTALMTD`, `TOTALYTD`, `COUNT`, `USERELATIONSHIP`, `FILTER`, `VALUES`, `AVERAGEX`, `MAX`, `LASTDATE`, `REMOVEFILTERS`, `IF` e `SELECTEDVALUE`.
+Durante o desenvolvimento, utilizei funções DAX amplamente aplicadas em cenários analíticos, como: `SUM`, `CALCULATE`, `DATEADD`, `VAR`, `DIVIDE`, `SAMEPERIODLASTYEAR`, `TOTALMTD`, `TOTALYTD`, `COUNT`, `USERELATIONSHIP`, `FILTER`, `VALUES`, `AVERAGEX`, `MAX`, `LASTDATE`, `REMOVEFILTERS`, `IF` e `SELECTEDVALUE`.
 
-As medidas relacionadas às entregas possibilitaram uma avaliação mais precisa do desempenho logístico, permitindo identificar gargalos operacionais, níveis de atraso e oportunidades de melhoria no cumprimento dos prazos acordados.
+Com as medidas relacionadas às entregas, consegui realizar uma avaliação mais precisa do desempenho logístico, identificando gargalos operacionais, níveis de atraso e oportunidades de melhoria no cumprimento dos prazos acordados.
 <br><br>
 <a href="https://github.com/Pedrofx-98/MaxOilSolutions/blob/main/Figures/Medidas_Entregas.png" target="_blank">Clique aqui</a> e acesse a figura de medidas das entregas no Github.
 ## Conclusão técnica
